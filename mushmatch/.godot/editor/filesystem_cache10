@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1766685852
+::res://::1766686373
 export_presets.cfg::TextFile::-1::1766194578::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::3744242476146802540::1763051724::1763052003::1::::<><><>0<>0<>2307d84922d1de22572555ea9898e198<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1766035552
+::res://assets/::1766686175
 arrow.png::CompressedTexture2D::3182054864536224065::1763056415::1763056438::1::::<><><>0<>0<>855339bc615483992dc44c287aa01941<>res://.godot/imported/arrow.png-af9c40b335090227900bc7e5c1ee343c.ctex::
 blue circle.png::CompressedTexture2D::7677060627785457568::1763051724::1763052003::1::::<><><>0<>0<>c52b928ddded34060c35c71d5eb124dc<>res://.godot/imported/blue circle.png-401161d58574399f103317bc2d8217fb.ctex::
 CrayonLibre-Italic.ttf::FontFile::6124517536264774494::1765478361::1766035552::1::::<><><>0<>0<>5a922417afa046abf6be57929c90b8f8<>res://.godot/imported/CrayonLibre-Italic.ttf-890e5965881ccb5ea5a73ad754e000d2.fontdata::
@@ -19,7 +19,7 @@ Screenshot 2025-12-11 034131.png::CompressedTexture2D::4619804079516300634::1765
 star.png::CompressedTexture2D::8534690540841055835::1763051724::1763052003::1::::<><><>0<>0<>242e10d3be9dd96ccf485c79e0309a09<>res://.godot/imported/star.png-db40ec76fb3fd808480ce0481255e27b.ctex::
 The Path of the Goblin King.mp3::AudioStreamMP3::3470559449114886812::1765299919::1765300098::1::::<><><>0<>0<>9600c9b35c79822766f48ef481686c89<>res://.godot/imported/The Path of the Goblin King.mp3-8649ab794c2cd6a340c9908e2df5df83.mp3str::
 yellow circle.png::CompressedTexture2D::6077035578034111708::1763051724::1763052003::1::::<><><>0<>0<>329e0b0856f3b182a3590c93b35b52eb<>res://.godot/imported/yellow circle.png-84dc958968b2c565e2c79698ab2e6b71.ctex::
-::res://scenes/::1766035511
+::res://scenes/::1766686175
 arrow.tscn::PackedScene::7233781945034244738::1764868291::0::1::::<><><>0<>0<><>::uid://blln8jnn6o7wv::::res://assets/arrow.png<>uid://qrx52ib7d7tm::::res://scripts/arrow.gd
 blue_circle.tscn::PackedScene::5416862434177291625::1765299919::0::1::::<><><>0<>0<><>::uid://dhm3cjlyjl1ei::::res://assets/blue circle.png<>uid://c18uuid5lrsj3::::res://scripts/pieces.gd
 board.tscn::PackedScene::7843184053413051972::1766035511::0::1::::<><><>0<>0<><>::uid://dpis0o16xucdl::::res://scripts/board.gd<>uid://dbcdljry1ndug::::res://scenes/arrow.tscn<>uid://b462gexew33lw::::res://assets/CrayonLibre-Regular.ttf<>uid://dbvi6wtkskqdj::::res://assets/Midnight Tale.mp3
@@ -32,7 +32,7 @@ pink_circle.tscn::PackedScene::143304630948480506::1765299919::0::1::::<><><>0<>
 red_circle.tscn::PackedScene::588506725422229459::1765299919::0::1::::<><><>0<>0<><>::uid://gpoglmuklx7o::::res://assets/red circle.png<>uid://c18uuid5lrsj3::::res://scripts/pieces.gd
 start_screen.tscn::PackedScene::438205342892586751::1765478361::0::1::::<><><>0<>0<><>::uid://cks54mlbo58k6::::res://scripts/start_screen.gd<>uid://b462gexew33lw::::res://assets/CrayonLibre-Regular.ttf<>uid://dgsvv6lba3p5u::::res://assets/mushmatch covercard2.png
 yellow_circle.tscn::PackedScene::7986802823621937996::1765299919::0::1::::<><><>0<>0<><>::uid://cst05gwbvo55i::::res://assets/yellow circle.png<>uid://c18uuid5lrsj3::::res://scripts/pieces.gd
-::res://scripts/::1766035511
+::res://scripts/::1766686175
 arrow.gd::GDScript::1159567415255552842::1765299919::0::1::::<>Sprite2D<><>0<>0<><>::
 board.gd::GDScript::8229748055331525097::1766035511::0::1::::<>Node2D<><>0<>0<><>::
 end_screen.gd::GDScript::8108718804478242399::1765478361::0::1::::<>Control<><>0<>0<><>::

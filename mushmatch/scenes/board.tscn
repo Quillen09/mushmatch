@@ -152,40 +152,60 @@ theme_override_font_sizes/font_size = 32
 text = "Player 1"
 
 [node name="p2Label" type="Label" parent="Control/CanvasLayer"]
-offset_left = 720.0
-offset_top = 1075.0
-offset_right = 844.0
-offset_bottom = 1120.0
+anchors_preset = -1
+anchor_left = 0.59800005
+anchor_top = 0.89300007
+anchor_right = 0.702
+anchor_bottom = 0.93000007
+offset_left = 0.00793457
+offset_top = -0.17211914
+offset_right = -1.2080078
+offset_bottom = 0.27990723
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_fv4ni")
 theme_override_font_sizes/font_size = 32
 text = "Player 2"
 
 [node name="p1Score" type="Label" parent="Control/CanvasLayer"]
-offset_left = 107.0
-offset_top = 76.0
-offset_right = 224.0
-offset_bottom = 115.0
+anchors_preset = -1
+anchor_left = 0.089
+anchor_top = 0.063
+anchor_right = 0.23700002
+anchor_bottom = 0.096
+offset_left = -0.15599823
+offset_top = 0.147995
+offset_right = -61.348022
+offset_bottom = -0.58399963
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_fv4ni")
 theme_override_font_sizes/font_size = 24
 text = "Player 1 Score: 0"
 
 [node name="p2Score" type="Label" parent="Control/CanvasLayer"]
-offset_left = 883.0
-offset_top = 69.0
-offset_right = 1069.0
-offset_bottom = 97.0
+anchors_preset = -1
+anchor_left = 0.73300004
+anchor_top = 0.057000004
+anchor_right = 0.8880001
+anchor_bottom = 0.081
+offset_left = 0.46795654
+offset_top = 0.37199402
+offset_right = -0.15209961
+offset_bottom = -0.5240021
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_fv4ni")
 theme_override_font_sizes/font_size = 24
 text = "Player 2 Score: 0"
 
 [node name="turnLabel" type="Label" parent="Control/CanvasLayer"]
-offset_left = 497.0
-offset_top = 923.0
-offset_right = 653.0
-offset_bottom = 951.0
+anchors_preset = -1
+anchor_left = 0.41300002
+anchor_top = 0.767
+anchor_right = 0.54200006
+anchor_bottom = 0.79
+offset_left = -0.25201416
+offset_top = -0.46801758
+offset_right = 0.4319458
+offset_bottom = -0.16003418
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_fv4ni")
 theme_override_font_sizes/font_size = 24
@@ -193,10 +213,14 @@ text = "Player 1's Turn"
 
 [node name="endTurnButton" type="Button" parent="Control/CanvasLayer"]
 anchors_preset = -1
-offset_left = 495.0
-offset_top = 975.0
-offset_right = 642.0
-offset_bottom = 1028.0
+anchor_left = 0.411
+anchor_top = 0.81000006
+anchor_right = 0.53300005
+anchor_bottom = 0.85400003
+offset_left = 0.15597534
+offset_top = -0.24005127
+offset_right = 0.26794434
+offset_bottom = -0.21606445
 theme_override_fonts/font = ExtResource("3_fv4ni")
 theme_override_font_sizes/font_size = 32
 text = "End Turn"
