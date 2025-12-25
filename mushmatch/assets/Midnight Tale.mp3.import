@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbvi6wtkskqdj"
+path="res://.godot/imported/Midnight Tale.mp3-debd6f3bf520ca9d983db2ea5c2a2a5b.mp3str"
+
+[deps]
+
+source_file="res://assets/Midnight Tale.mp3"
+dest_files=["res://.godot/imported/Midnight Tale.mp3-debd6f3bf520ca9d983db2ea5c2a2a5b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,85 @@
+[gd_scene load_steps=3 format=3 uid="uid://cra0ud2ijli1w"]
+
+[ext_resource type="Script" uid="uid://dnr6ocuj7pltv" path="res://scripts/end_screen.gd" id="1_kq7ac"]
+[ext_resource type="FontFile" uid="uid://b462gexew33lw" path="res://assets/CrayonLibre-Regular.ttf" id="2_6e1uj"]
+
+[node name="endScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kq7ac")
+
+[node name="winnerLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.349
+anchor_top = 0.101
+anchor_right = 0.517
+anchor_bottom = 0.17400001
+offset_left = -0.1960144
+offset_top = 0.3959961
+offset_right = -0.46801758
+offset_bottom = -4.4960175
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_6e1uj")
+theme_override_font_sizes/font_size = 60
+text = "winner"
+
+[node name="loserLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35700002
+anchor_top = 0.29700002
+anchor_right = 0.45600003
+anchor_bottom = 0.354
+offset_left = 0.17196655
+offset_top = -0.5880127
+offset_right = -0.024047852
+offset_bottom = -0.21600342
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_6e1uj")
+theme_override_font_sizes/font_size = 50
+text = "loser"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.374
+anchor_top = 0.45900002
+anchor_right = 0.712
+anchor_bottom = 0.652
+offset_left = -26.29602
+offset_top = 96.36395
+offset_right = -83.247986
+offset_bottom = 88.992004
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="playAgain" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_6e1uj")
+theme_override_font_sizes/font_size = 32
+text = "Play Again?"
+
+[node name="backToTitle" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_6e1uj")
+theme_override_font_sizes/font_size = 32
+text = "Return to Title"
+
+[node name="exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_6e1uj")
+theme_override_font_sizes/font_size = 32
+text = "Exit"
+
+[connection signal="pressed" from="VBoxContainer/playAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="VBoxContainer/backToTitle" to="." method="_on_back_to_title_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]

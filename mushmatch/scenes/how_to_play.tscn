@@ -1,0 +1,103 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqcl0xw35nqsn"]
+
+[ext_resource type="Script" uid="uid://ciui60vugrqgt" path="res://scripts/how_to_play.gd" id="1_d4i75"]
+[ext_resource type="FontFile" uid="uid://b462gexew33lw" path="res://assets/CrayonLibre-Regular.ttf" id="2_30apa"]
+
+[node name="howToPlay" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d4i75")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.402
+anchor_top = 0.083000004
+anchor_right = 0.59800005
+anchor_bottom = 0.12900001
+offset_left = 0.49197388
+offset_top = 0.067993164
+offset_right = -0.49206543
+offset_bottom = -0.31600952
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_30apa")
+theme_override_font_sizes/font_size = 40
+text = "How To Play"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_top = 0.155
+anchor_right = 1.0
+anchor_bottom = 0.95900005
+offset_left = 15.0
+offset_top = 0.38000488
+offset_right = -3.0
+offset_bottom = 0.3638916
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_30apa")
+theme_override_fonts/bold_font = ExtResource("2_30apa")
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "Pick and place
+[ul]
+Choose a piece from your hand.
+Click the piece you want to play.
+Select a row or column on the board.
+Click the arrow pointing the direction you want to push - the arrow shows which way the line will slide.
+[/ul]
+[br]
+Valid moves
+[ul]
+The game blocks invalid moves automatically.
+You may play if your piece matches the color on the opposite end of the chosen row or column.
+You may play if your piece does not match any color in that row or column.
+You may NOT play if your piece matches a color inside the row/column but not the opposite end.
+[/ul]
+[br]
+Sliding and hand refill
+[ul]
+Sliding effect: the selected row or column shifts by one space in the arrow’s direction.
+The piece at the far end is pushed out and returned to the draw pile.
+After the move, your hand refills back to 3 pieces.
+[/ul]
+[br]
+Pink ability pieces
+[ul]
+When played, a Pink piece lets you swap any two pieces on the board (Mushrooms cannot be swapped).
+Pink pieces are not placed on the board; after use they return to the draw pile.
+[/ul]
+[br]
+Mushroom reset and scoring
+[ul]
+If all Mushrooms are removed from the board, the center tile is replaced with a new Mushroom.
+First player to reach 7 points wins
+[/ul]"
+fit_content = true
+visible_characters_behavior = 1
+
+[node name="backButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.065000005
+anchor_top = 0.053000003
+anchor_right = 0.133
+anchor_bottom = 0.097
+offset_left = -0.26000977
+offset_top = 0.18799591
+offset_right = -0.13200378
+offset_bottom = 0.21199799
+theme_override_fonts/font = ExtResource("2_30apa")
+theme_override_font_sizes/font_size = 32
+text = "Back"
+
+[connection signal="pressed" from="backButton" to="." method="_on_back_button_pressed"]

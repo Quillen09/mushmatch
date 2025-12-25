@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://gijgb0egjk8n"]
+
+[ext_resource type="Script" uid="uid://cks54mlbo58k6" path="res://scripts/start_screen.gd" id="1_tx5wa"]
+[ext_resource type="FontFile" uid="uid://b462gexew33lw" path="res://assets/CrayonLibre-Regular.ttf" id="2_he1sj"]
+[ext_resource type="Texture2D" uid="uid://dgsvv6lba3p5u" path="res://assets/mushmatch covercard2.png" id="2_r2jwc"]
+
+[node name="startScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tx5wa")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_r2jwc")
+
+[node name="startButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.41500002
+anchor_top = 0.66200006
+anchor_right = 0.513
+anchor_bottom = 0.71400005
+offset_left = 0.33996582
+offset_top = -0.048095703
+offset_right = 0.34796143
+offset_bottom = 0.3439331
+theme_override_fonts/font = ExtResource("2_he1sj")
+theme_override_font_sizes/font_size = 40
+text = "Start"
+
+[node name="tutorialButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.36100003
+anchor_top = 0.823
+anchor_right = 0.563
+anchor_bottom = 0.87500006
+offset_left = 0.35595703
+offset_top = 0.10797119
+offset_right = 0.14794922
+offset_bottom = 0.49987793
+theme_override_fonts/font = ExtResource("2_he1sj")
+theme_override_font_sizes/font_size = 40
+text = "How To Play"
+
+[connection signal="pressed" from="startButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="tutorialButton" to="." method="_on_tutorial_button_pressed"]

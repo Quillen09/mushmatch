@@ -1,0 +1,209 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj0kdil2sde0k"]
+
+[ext_resource type="Script" uid="uid://dpis0o16xucdl" path="res://scripts/board.gd" id="1_p0ybc"]
+[ext_resource type="PackedScene" uid="uid://dbcdljry1ndug" path="res://scenes/arrow.tscn" id="2_tx6nw"]
+[ext_resource type="FontFile" uid="uid://b462gexew33lw" path="res://assets/CrayonLibre-Regular.ttf" id="3_fv4ni"]
+[ext_resource type="AudioStream" uid="uid://dbvi6wtkskqdj" path="res://assets/Midnight Tale.mp3" id="3_nglv8"]
+
+[node name="board" type="Node2D"]
+script = ExtResource("1_p0ybc")
+
+[node name="gridOrigin" type="Marker2D" parent="."]
+position = Vector2(440, 314)
+
+[node name="arrows" type="Node2D" parent="."]
+position = Vector2(247, 186)
+
+[node name="arrow" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(193.5, 43)
+rotation = -1.5707964
+index = 0
+
+[node name="arrow2" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(279.5, 43)
+rotation = -1.5707964
+
+[node name="arrow3" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(365.5, 43)
+rotation = -1.5707964
+index = 2
+
+[node name="arrow4" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(451.5, 43)
+rotation = -1.5707964
+index = 3
+
+[node name="arrow5" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(623.5, 129)
+type = "row"
+index = 0
+
+[node name="arrow6" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(107.5, 473)
+rotation = 3.1415927
+type = "row"
+index = 4
+direction = 1
+
+[node name="arrow7" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(107.5, 387)
+rotation = 3.1415927
+type = "row"
+index = 3
+direction = 1
+
+[node name="arrow8" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(107.5, 301)
+rotation = 3.1415927
+type = "row"
+index = 2
+direction = 1
+
+[node name="arrow9" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(107.5, 215)
+rotation = 3.1415927
+type = "row"
+direction = 1
+
+[node name="arrow10" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(107.5, 129)
+rotation = 3.1415927
+type = "row"
+index = 0
+direction = 1
+
+[node name="arrow11" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(537.5, 43)
+rotation = -1.5707964
+index = 4
+
+[node name="arrow12" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(623.5, 473)
+type = "row"
+index = 4
+
+[node name="arrow13" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(623.5, 387)
+type = "row"
+index = 3
+
+[node name="arrow14" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(623.5, 301)
+type = "row"
+index = 2
+
+[node name="arrow15" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(623.5, 215)
+type = "row"
+
+[node name="arrow16" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(537.5, 559)
+rotation = 1.5707964
+index = 4
+direction = 1
+
+[node name="arrow17" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(451.5, 559)
+rotation = 1.5707964
+index = 3
+direction = 1
+
+[node name="arrow18" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(365.5, 559)
+rotation = 1.5707964
+index = 2
+direction = 1
+
+[node name="arrow19" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(279.5, 559)
+rotation = 1.5707964
+direction = 1
+
+[node name="arrow20" parent="arrows" instance=ExtResource("2_tx6nw")]
+position = Vector2(193.5, 559)
+rotation = 1.5707964
+index = 0
+direction = 1
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 75.0
+offset_top = -9.0
+offset_right = 75.0
+offset_bottom = -9.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Control"]
+
+[node name="p1Label" type="Label" parent="Control/CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.086
+anchor_top = 0.896
+anchor_right = 0.208
+anchor_bottom = 0.93700004
+offset_left = 0.45599365
+offset_top = 0.21594238
+offset_right = 0.56799316
+offset_bottom = -0.14807129
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_fv4ni")
+theme_override_font_sizes/font_size = 32
+text = "Player 1"
+
+[node name="p2Label" type="Label" parent="Control/CanvasLayer"]
+offset_left = 720.0
+offset_top = 1075.0
+offset_right = 844.0
+offset_bottom = 1120.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_fv4ni")
+theme_override_font_sizes/font_size = 32
+text = "Player 2"
+
+[node name="p1Score" type="Label" parent="Control/CanvasLayer"]
+offset_left = 107.0
+offset_top = 76.0
+offset_right = 224.0
+offset_bottom = 115.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_fv4ni")
+theme_override_font_sizes/font_size = 24
+text = "Player 1 Score: 0"
+
+[node name="p2Score" type="Label" parent="Control/CanvasLayer"]
+offset_left = 883.0
+offset_top = 69.0
+offset_right = 1069.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_fv4ni")
+theme_override_font_sizes/font_size = 24
+text = "Player 2 Score: 0"
+
+[node name="turnLabel" type="Label" parent="Control/CanvasLayer"]
+offset_left = 497.0
+offset_top = 923.0
+offset_right = 653.0
+offset_bottom = 951.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_fv4ni")
+theme_override_font_sizes/font_size = 24
+text = "Player 1's Turn"
+
+[node name="endTurnButton" type="Button" parent="Control/CanvasLayer"]
+anchors_preset = -1
+offset_left = 495.0
+offset_top = 975.0
+offset_right = 642.0
+offset_bottom = 1028.0
+theme_override_fonts/font = ExtResource("3_fv4ni")
+theme_override_font_sizes/font_size = 32
+text = "End Turn"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_nglv8")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="Control/CanvasLayer/endTurnButton" to="." method="_on_end_turn_button_pressed"]

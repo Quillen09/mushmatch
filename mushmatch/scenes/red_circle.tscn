@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://incvcqccn22j"]
+
+[ext_resource type="Texture2D" uid="uid://gpoglmuklx7o" path="res://assets/red circle.png" id="1_66lbg"]
+[ext_resource type="Script" uid="uid://c18uuid5lrsj3" path="res://scripts/pieces.gd" id="2_ro0ii"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wx30f"]
+size = Vector2(172, 172)
+
+[node name="redCircle" type="Sprite2D"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_66lbg")
+script = ExtResource("2_ro0ii")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_wx30f")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d03syrqsly06b"
+path="res://.godot/imported/Death and Axes.mp3-9c3a22cfc5bea20a676cdc7955d2f3c0.mp3str"
+
+[deps]
+
+source_file="res://assets/Death and Axes.mp3"
+dest_files=["res://.godot/imported/Death and Axes.mp3-9c3a22cfc5bea20a676cdc7955d2f3c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl14qf2yg2qxg"]
+
+[ext_resource type="Texture2D" uid="uid://cst05gwbvo55i" path="res://assets/yellow circle.png" id="1_jijbr"]
+[ext_resource type="Script" uid="uid://c18uuid5lrsj3" path="res://scripts/pieces.gd" id="2_6t07t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1lbln"]
+size = Vector2(172, 172)
+
+[node name="yellowCircle" type="Sprite2D"]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_jijbr")
+script = ExtResource("2_6t07t")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_1lbln")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
